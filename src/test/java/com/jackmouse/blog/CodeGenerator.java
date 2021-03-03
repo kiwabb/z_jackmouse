@@ -68,7 +68,7 @@ public class CodeGenerator {
         strategy.setInclude("tb_user_info","tb_user_auth","tb_unique_view","tb_tag","tb_message","tb_friend_link","tb_comment","tb_category","tb_category","tb_article_tag","tb_article");
 
         strategy.setNaming(NamingStrategy.underline_to_camel);//数据库表映射到实体的命名策略
-        strategy.setTablePrefix(pc.getModuleName() + "_"); //生成实体时去掉表前缀
+        strategy.setTablePrefix("tb_"); //生成实体时去掉表前缀
 
         strategy.setColumnNaming(NamingStrategy.underline_to_camel);//数据库表字段映射到实体的命名策略
         strategy.setEntityLombokModel(true); // lombok 模型 @Accessors(chain = true) setter链式操作
